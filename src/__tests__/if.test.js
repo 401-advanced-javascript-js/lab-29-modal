@@ -1,11 +1,11 @@
-import If from "../if";
+import If from '../if';
 
-describe("If function for JSX", () => {
-  it("returns null on invalid input", () => {
+describe('If function for JSX', () => {
+  it('returns null on invalid input', () => {
     If();
   });
 
-  it("returns data on truthy condition", () => {});
+  it('returns data on truthy condition', () => {});
 
-  it("returns null on falsy condition", () => {});
+  it('returns null on falsy condition', () => {});
 });

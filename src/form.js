@@ -1,12 +1,12 @@
-import React from "react";
-import superagent from "superagent";
+import React from 'react';
+import superagent from 'superagent';
 
 class Form extends React.Component {
-  handleSubmit = async e => {
+  handleSubmit = async (e) => {
     e.preventDefault();
-    let data = await superagent.get("https://swapi.co/api/people/");
-    let count = data.body.count;
-    let people = data.body.results.reduce((list, person) => {
+    const data = await superagent.get('https://swapi.co/api/people/');
+    const count = data.body.count;
+    const people = data.body.results.reduce((list, person) => {
       list[person.name] = person.url;
       return list;
     }, {});

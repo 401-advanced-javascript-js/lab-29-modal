@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Form from "./form.js";
-import If from "./if";
-import Modal from "./components/modal/modal";
+import Form from './form.js';
+import If from './if';
+import Modal from './components/modal/modal';
 
-import "./styles.scss";
+import './styles.scss';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class App extends React.Component {
     this.state = {
       count: 0,
       people: [],
-      selectedPerson: ""
+      selectedPerson: '',
     };
   }
 
@@ -20,15 +20,15 @@ class App extends React.Component {
     this.setState({ count, people });
   };
 
-  showPerson = person => {
+  showPerson = (person) => {
     this.setState({ selectedPerson: person });
   };
 
-  handleClick = event => {
+  handleClick = (event) => {
     event.preventDefault();
 
     this.setState(previousState => ({
-      selectedPerson: !previousState.selectedPerson
+      selectedPerson: !previousState.selectedPerson,
     }));
   };
 

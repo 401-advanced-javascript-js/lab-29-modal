@@ -1,5 +1,5 @@
-import Modal from "../components/modal/modal";
+import Modal from '../components/modal/modal';
 
-describe("Modal Component", () => {
-  it("returns div containing h3", () => {});
+describe('Modal Component', () => {
+  it('returns div containing h3', () => {});
 });
